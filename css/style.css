@@ -11,7 +11,7 @@ h1,h2 {
 
 .inner {
   width: 1100px;
-  margin: 0 auto;
+  margin:0 auto;
 }
 
 .backcolor__gray {
@@ -26,6 +26,9 @@ img {
   vertical-align: bottom;
 }
 
+a {
+  text-decoration: none;
+}
 /*header*/
 .header__logo {
   background-color: #fff;
@@ -223,7 +226,7 @@ img {
   text-align: center;
   align-items: center;
   padding: 15px;
-  width: 185px;
+  width: 25%;
   transition: background-color 0.3s;
 }
 
@@ -250,18 +253,19 @@ a.valious__logo__child:hover {
 
   .inner {
     width: 97%;
-    margin: 0 auto;
   }
 
   .main__phone {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 25px;
   }
 
+  .right__image {
+    margin: 20px 0 0 0;
+  }
+  
   .img_parent {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -270,19 +274,18 @@ a.valious__logo__child:hover {
     margin: 0;
   }
 
-  .valious__image:nth-child(4n) {
-    margin-top: 80px;
+  .valious__image:nth-child(3n) {
+    margin-bottom: 80px;
   }
 
   .valious__image__subtext {
-    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
     width: 100%;
   }
 
   .loading__main__image {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -346,19 +349,14 @@ a.valious__logo__child:hover {
   font-size: 80px;
 }
 
-.right__image {
-  margin-top: 20px;
-  margin-left: 0;
-}
-
 .flexright {
   margin: 0 auto;
   margin-top: 30px;
 }
 
 .logo__inner {
-  padding: 50px 15px;
-  max-width: 97%;
+  padding: 50px 0 50px 0;
+  box-sizing: border-box;
 }
 
 .loading__image:last-child {
@@ -366,13 +364,11 @@ a.valious__logo__child:hover {
 }
 
 .valious__logo__parent {
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .valious__logo__child {
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -381,9 +377,14 @@ a.valious__logo__child:hover {
 
 /*tab sp inner 97%
 
-pc修正
+contact,mail
 
+ipad
+what i can do margin
 
+3n nth child
+
+25% logo width
 
 
 
