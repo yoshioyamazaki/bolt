@@ -12,7 +12,6 @@ h1,h2 {
 .inner {
   width: 1100px;
   margin: 0 auto;
-  max-width: 100%;
 }
 
 .backcolor__gray {
@@ -66,9 +65,8 @@ img {
 
 /*Bolt Theme*/
 
-.top__title {
-  padding-top: 250px;
-  padding-bottom: 250px;
+.theme-inner {
+  padding: 250px 0;
 }
 
 .bolt__main__text {
@@ -87,7 +85,7 @@ img {
 
 /*What we can do*/
 
-.phone__image {
+.main__phone {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -115,8 +113,7 @@ img {
 /*Our Ltest Work*/
 
 .second__main {
-  padding-top: 60px;
-  padding-bottom: 70px;
+  padding: 60px 0 70px 0;
 }
 
 .valious__image__title {
@@ -150,15 +147,12 @@ img {
   margin-top: 0;
 }
 
-.rap {
-  margin-top: 90px;
-}
-
 .valious__image__subtext {
   display: flex;
   text-align: center;
   width: 650px;
   margin: 0 auto;
+  margin-top: 90px;
 }
 
 .flexright {
@@ -182,9 +176,8 @@ img {
   background-color: #4e4e4e;
 }
 
-.third__image__wrapper {
-  padding-top: 70px;
-  padding-bottom: 100px;
+.loading {
+  padding: 70px 0 100px 0;
 }
 
 .loading__maintext {
@@ -202,6 +195,7 @@ img {
 .loading__image {
   margin-right: 180px;
 }
+
 .loading__image:last-child{
   margin-right: 0;
 }
@@ -214,9 +208,8 @@ img {
 
 /*logo*/
 
-.valious__logo__wrapper {
-  padding-top: 200px;
-  padding-bottom: 200px;
+.logo__inner {
+  padding: 200px 0 200px 0;
 }
 
 .valious__logo__parent {
@@ -255,6 +248,18 @@ a.valious__logo__child:hover {
 
 @media screen and (max-width: 1199px) {
 
+  .inner {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .main__phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
+
   .img_parent {
     display: flex;
     flex-direction: column;
@@ -292,13 +297,6 @@ a.valious__logo__child:hover {
 /*----- pad ----------*/
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
-  .phone__image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 25px;
-  }
 
   .right__image {
     margin-left: 0;
@@ -340,20 +338,12 @@ a.valious__logo__child:hover {
   margin-bottom: 0;
 }
 
-.top__title {
-  padding-top: 160px;
-  padding-bottom: 130px;
+.theme-inner {
+  padding: 160px 0 130px 0;
 }
 
 .bolt__main__text {
   font-size: 80px;
-}
-
-.phone__image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 25px;
 }
 
 .right__image {
@@ -366,6 +356,11 @@ a.valious__logo__child:hover {
   margin-top: 30px;
 }
 
+.logo__inner {
+  padding: 50px 15px;
+  max-width: 97%;
+}
+
 .loading__image:last-child {
   margin-bottom: 0;
 }
@@ -376,11 +371,6 @@ a.valious__logo__child:hover {
   align-items: center;
 }
 
-.valious__logo__wrapper {
-  padding: 0;
-  padding: 50px 15px;
-}
-
 .valious__logo__child {
   box-sizing: border-box;
   width: 100%;
@@ -388,3 +378,13 @@ a.valious__logo__child:hover {
 
 }
 
+
+/*tab sp inner 97%
+
+pc修正
+
+
+
+
+
+*/
