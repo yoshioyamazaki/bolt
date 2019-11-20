@@ -1,9 +1,18 @@
 @charset "utf-8";
 
 /* 共通　*/
+body {
+  font-family: 'Lato';
+}
+
+h1,h2 {
+  font-family: 'Raleway';
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .backcolor__gray {
@@ -14,46 +23,44 @@
   background-color: #74cfae;
 }
 
-body {
-  font-family: 'Lato';
-}
-
-h1,h2 {
-  font-family: 'Raleway';
-}
-
-/*---- header ----*/
+/*header*/
 .header__logo {
   background-color: #fff;
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 1;
+  width: 100%;
 }
 
 .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 15px 0;
 }
 
-.leftbox {
+.left__box {
   font-size: 40px;
 }
 
-.rightbox {
+.right__box {
   font-size: 12px;
   background-color: #74cfae;
   padding: 14px 12px;
   color: #fff;
+  transition: color 0.3s;
 }
 
-.rightbox:hover {
+.right__box:hover {
   color: black;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
+.mobile__icon {
+  display: none;
+}
 
-/*---- main ----*/
+/*Bolt Theme*/
 
 .top__title {
   padding-top: 250px;
@@ -74,7 +81,7 @@ h1,h2 {
   text-align: center;
 }
 
-/*---------------*/
+/*What we can do*/
 
 .phone__image {
   display: flex;
@@ -101,9 +108,7 @@ h1,h2 {
   font-size: 20px;
 }
 
-
-/*-----------*/
-
+/*Our Ltest Work*/
 
 .second__main {
   padding-top: 60px;
@@ -125,11 +130,12 @@ h1,h2 {
   opacity: 0.7;
   margin-top: 80px;
   margin-left: 100px;
+  transition: opacity 0.3s;
 }
 
 .valious__image:hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: opacity 0.3s;
 }
 
 .valious__image:nth-child(3n+1) {
@@ -153,23 +159,20 @@ h1,h2 {
 
 .flexright {
   background-color: #74cfae;
+  color: #fff;
   padding: 14px 20px;
   margin-left: 90px;
-}
-
-.subtext__right__text {
-  color: #fff;
   font-size: 12px;
+  transition: color 0.3s;
+  line-height: 2;
 }
 
-
-.subtext__right__text:hover {
+.flexright:hover {
   color: black;
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
-
-/*------------*/
+/*Our skills*/
 
 .third__image {
   background-color: #4e4e4e;
@@ -205,8 +208,7 @@ h1,h2 {
   text-align: center;
 }
 
-/*-------*/
-
+/*logo*/
 
 .valious__logo__wrapper {
   padding-top: 200px;
@@ -225,14 +227,15 @@ h1,h2 {
   align-items: center;
   padding: 15px;
   width: 185px;
+  transition: background-color 0.3s;
 }
 
 a.valious__logo__child:hover {
   background-color: #fff;
-  transition: 0.3s;
+  transition: background-color 0.3s;
 }
 
-/*--------*/
+/*footer*/
 
 .footer__inner {
   padding-top:20px;
@@ -244,35 +247,171 @@ a.valious__logo__child:hover {
   color: #fff;
 }
 
-/*----
+/*----- pad ----------*/
 
-ok 1.修正1100px
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .phone__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 25px;
+  }
 
-ok header　stiky 使えないプロパティ
+  .right__image {
+    margin-left: 0;
+  }
 
-ok h1 p h2タグ
-section内でのh2,h3で分ける
-pタグを用いる
+  .img_parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-ok margin imag下タグ
+  img {
+    vertical-align: bottom;
+  }
 
-ok 上と左に付ける
-一番目　左がいらない要素３の倍数
+  .valious__image {
+    margin: 0;
+  }
+  
+  .valious__image:nth-child(4n) {
+    margin-top: 80px;
+  }
 
-ok 幅を親要素で指定
-テキストアラインセンター
+  .valious__image__subtext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-ok 要素マージン　ローディングタイトル
+  .flexright {
+    margin: 0 auto;
+    margin-top: 40px;
+  }
 
-ok リンクaタグ　ホバー要素もaタグに
+  .loading__main__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-ok フォント
+  .loading__image {
+    margin-right: 0;
+    margin-bottom: 88px;
+  }
 
-グーグルフォントweb用のフォイんと
+  .loading__image:last-child {
+    margin-bottom: 0;
+  }
+}
 
-タイトル相当するのがレールウェイ
+/*----- sp ----------*/
 
-bodyタグにレールウェイ
+@media screen and (max-width: 767px) {
 
-----*/
+.right__box {
+  display: none;
+}
+
+.mobile__icon {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.icon__border {
+  background-color: #ddd;
+  width: 35px;
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+.icon__border:last-child {
+  margin-bottom: 0;
+}
+
+.top__title {
+  padding-top: 160px;
+  padding-bottom: 130px;
+}
+
+.bolt__main__text {
+  font-size: 80px;
+}
+
+.phone__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 25px;
+}
+
+.right__image {
+  margin-top: 20px;
+  margin-left: 0;
+}
+
+.img_parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  vertical-align: bottom;
+}
+.valious__image  {
+  margin: 0;
+}
+
+.valious__image:nth-child(4n) {
+  margin-top: 50px;
+}
+
+.valious__image__subtext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.flexright {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.loading__main__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loading__image {
+  margin: 0;
+  margin-bottom: 80px;
+}
+
+.loading__image:last-child {
+  margin-bottom: 0;
+}
+
+.valious__logo__parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.valious__logo__wrapper {
+  padding: 0;
+  padding: 50px 15px;
+}
+
+.valious__logo__child {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+}
 
