@@ -23,6 +23,10 @@ h1,h2 {
   background-color: #74cfae;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 /*header*/
 .header__logo {
   background-color: #fff;
@@ -267,10 +271,6 @@ a.valious__logo__child:hover {
     align-items: center;
   }
 
-  img {
-    vertical-align: bottom;
-  }
-
   .valious__image {
     margin: 0;
   }
@@ -359,9 +359,6 @@ a.valious__logo__child:hover {
   align-items: center;
 }
 
-img {
-  vertical-align: bottom;
-}
 .valious__image  {
   margin: 0;
 }
@@ -389,8 +386,7 @@ img {
 }
 
 .loading__image {
-  margin: 0;
-  margin-bottom: 80px;
+  margin: 0 0 80px 0;
 }
 
 .loading__image:last-child {
